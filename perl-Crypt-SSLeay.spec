@@ -3,7 +3,7 @@ Summary:	Crypt-SSLeay perl module
 Summary(pl):	Modu³ perla Crypt-SSLeay
 Name:		perl-Crypt-SSLeay
 Version:	0.25
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
