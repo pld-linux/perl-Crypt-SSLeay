@@ -1,26 +1,10 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Crypt
 %define		pnam	SSLeay
-Summary:	Crypt::SSLeay Perl module
-Summary(cs):	Modul Crypt::SSLeay pro Perl
-Summary(da):	Perlmodul Crypt::SSLeay
-Summary(de):	Crypt::SSLeay Perl Modul
-Summary(es):	Módulo de Perl Crypt::SSLeay
-Summary(fr):	Module Perl Crypt::SSLeay
-Summary(it):	Modulo di Perl Crypt::SSLeay
-Summary(ja):	Crypt::SSLeay Perl ¥â¥¸¥å¡¼¥ë
-Summary(ko):	Crypt::SSLeay ÆÞ ¸ðÁÙ
-Summary(no):	Perlmodul Crypt::SSLeay
-Summary(pl):	Modu³ Perla Crypt::SSLeay
-Summary(pt):	Módulo de Perl Crypt::SSLeay
-Summary(pt_BR):	Módulo Perl Crypt::SSLeay
-Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl Crypt::SSLeay
-Summary(sv):	Crypt::SSLeay Perlmodul
-Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl Crypt::SSLeay
-Summary(zh_CN):	Crypt::SSLeay Perl Ä£¿é
+Summary:	Crypt::SSLeay - OpenSSL glue that provides LWP https support
 Name:		perl-Crypt-SSLeay
 Version:	0.45
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -30,55 +14,9 @@ BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Crypt::SSLeay perl module.
-
-%description -l cs
-Modul Crypt::SSLeay pro Perl.
-
-%description -l da
-Perlmodul Crypt::SSLeay.
-
-%description -l de
-Crypt::SSLeay Perl Modul.
-
-%description -l es
-Módulo de Perl Crypt::SSLeay.
-
-%description -l fr
-Module Perl Crypt::SSLeay.
-
-%description -l it
-Modulo di Perl Crypt::SSLeay.
-
-%description -l ja
-Crypt::SSLeay Perl ¥â¥¸¥å¡¼¥ë
-
-%description -l ko
-Crypt::SSLeay ÆÞ ¸ðÁÙ.
-
-%description -l no
-Perlmodul Crypt::SSLeay.
-
-%description -l pl
-Modu³ Perla Crypt::SSLeay.
-
-%description -l pt
-Módulo de Perl Crypt::SSLeay.
-
-%description -l pt_BR
-Módulo Perl Crypt::SSLeay.
-
-%description -l ru
-íÏÄÕÌØ ÄÌÑ Perl Crypt::SSLeay.
-
-%description -l sv
-Crypt::SSLeay Perlmodul.
-
-%description -l uk
-íÏÄÕÌØ ÄÌÑ Perl Crypt::SSLeay.
-
-%description -l zh_CN
-Crypt::SSLeay Perl Ä£¿é
+This perl module provides support for the https protocol under LWP, so
+that a LWP::UserAgent can make https GET & HEAD & POST requests. Please
+see perldoc LWP for more information on POST requests.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
