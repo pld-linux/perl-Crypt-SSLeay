@@ -1,6 +1,7 @@
 #
 # Conditional build:
 # _without_tests - do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Crypt
 %define		pnam	SSLeay
@@ -8,13 +9,13 @@ Summary:	Crypt::SSLeay - OpenSSL glue that provides LWP https support
 Summary(pl):	Crypt::SSLeay - obs³uga https dla LWP przez po³±czenie z OpenSSL
 Name:		perl-Crypt-SSLeay
 Version:	0.49
-Release:	1
+Release:	2
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	openssl-devel >= 0.9.7
 BuildRequires:	perl >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -37,8 +38,10 @@ niezbêdnych do jego dzia³ania sk³adników.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-yes "" | perl Makefile.PL
+yes "" | %{__perl} Makefile.PL \
+	INSTALLDIRS=vendor
 %{__make} OPTIMIZE="%{rpmcflags}"
+
 %{!?_without_tests:%{__make} test}
 
 %install
@@ -52,10 +55,10 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc CHANGES README
-%{perl_sitearch}/Crypt/SSLeay.pm
-%{perl_sitearch}/Crypt/SSLeay
-%{perl_sitearch}/Net/SSL.pm
-%dir %{perl_sitearch}/auto/Crypt/SSLeay
-%{perl_sitearch}/auto/Crypt/SSLeay/SSLeay.bs
-%attr(755,root,root) %{perl_sitearch}/auto/Crypt/SSLeay/SSLeay.so
+%{perl_vendorarch}/Crypt/SSLeay.pm
+%{perl_vendorarch}/Crypt/SSLeay
+%{perl_vendorarch}/Net/SSL.pm
+%dir %{perl_vendorarch}/auto/Crypt/SSLeay
+%{perl_vendorarch}/auto/Crypt/SSLeay/SSLeay.bs
+%attr(755,root,root) %{perl_vendorarch}/auto/Crypt/SSLeay/SSLeay.so
 %{_mandir}/man3/*
