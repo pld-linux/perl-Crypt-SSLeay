@@ -2,19 +2,20 @@
 Summary:	Crypt-SSLeay perl module
 Summary(pl):	Modu³ perla Crypt-SSLeay
 Name:		perl-Crypt-SSLeay
-Version:	0.15
-Release:	2
+Version:	0.17
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Crypt/Crypt-SSLeay-%{version}.tar.gz
-Patch0:		perl-Crypt-SSLeay-sv.patch
+Vendor: PLD
+Distribution: PLD
+Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Crypt/Crypt-SSLeay-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-16
-BuildRequires:	perl >= 5.6.0-1
+BuildRequires:	perl >= 5.005_03-14
 BuildRequires:	openssl-devel >= 0.9.4-2
 %requires_eq	perl
 Requires:	%{perl_sitearch}
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
 Crypt-SSLeay perl module.
@@ -24,22 +25,21 @@ Modul perla Crypt-SSLeay.
 
 %prep
 %setup -q -n Crypt-SSLeay-%{version}
-%patch -p1
 
 %build
 yes "" | perl Makefile.PL
 
-%{__make} OPTIMIZE="$RPM_OPT_FLAGS"
+make OPTIMIZE="$RPM_OPT_FLAGS"
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+make install DESTDIR=$RPM_BUILD_ROOT
 
 strip --strip-unneeded $RPM_BUILD_ROOT/%{perl_sitearch}/auto/Crypt/SSLeay/*.so
 
 (
   cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/Crypt/SSLeay
-  sed -e "s#$RPM_BUILD_ROOT##" .packlist >.packlist.new
+  sed -e "s#$RPM_BUILD_ROOT##" .packlist | sort | uniq >.packlist.new
   mv .packlist.new .packlist
 )
 
