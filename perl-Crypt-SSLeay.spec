@@ -23,12 +23,13 @@ Summary(zh_CN):	Crypt::SSLeay - 提供 LWP https 支持的 OpenSSL 胶水
 Summary(zh_TW):	Crypt::SSLeay - 矗ㄑ LWP https や穿 OpenSSL glue
 Name:		perl-Crypt-SSLeay
 Version:	0.51
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	e276fd3970d573139fe56695a7b747bd
+Patch0:		%{name}-init.patch
 BuildRequires:	openssl-devel >= 0.9.7d
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -167,6 +168,7 @@ Crypt::SSLeay 软件包包含 Net::SSL(它在 https 请求时
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
+%patch0 -p1
 
 %build
 yes "" | %{__perl} Makefile.PL \
