@@ -19,7 +19,7 @@ Summary(sv):	Crypt::SSLeay Perlmodul
 Summary(uk):	Модуль для Perl Crypt::SSLeay
 Summary(zh_CN):	Crypt::SSLeay Perl дё©И
 Name:		perl-Crypt-SSLeay
-Version:	0.41
+Version:	0.45
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
@@ -87,6 +87,8 @@ Crypt::SSLeay Perl дё©И
 yes "" | perl Makefile.PL
 
 %{__make} OPTIMIZE="%{rpmcflags}"
+
+%{!?_without_test:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
