@@ -27,7 +27,7 @@ Modul perla Crypt-SSLeay.
 %build
 yes "" | perl Makefile.PL
 
-make OPTIMIZE="%{!?debug:$RPM_OPT_FLAGS}%{?debug:-O -g}"
+make OPTIMIZE="%{?debug:-O -g}%{!?debug:$RPM_OPT_FLAGS}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
