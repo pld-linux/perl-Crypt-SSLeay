@@ -3,13 +3,14 @@ Summary:	Crypt-SSLeay perl module
 Summary(pl):	Modu³ perla Crypt-SSLeay
 Name:		perl-Crypt-SSLeay
 Version:	0.15
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Crypt/Crypt-SSLeay-%{version}.tar.gz
+Patch0:		perl-Crypt-SSLeay-sv.patch
 BuildRequires:	rpm-perlprov >= 3.0.3-16
-BuildRequires:	perl >= 5.005_03-14
+BuildRequires:	perl >= 5.6.0-1
 BuildRequires:	openssl-devel >= 0.9.4-2
 %requires_eq	perl
 Requires:	%{perl_sitearch}
@@ -23,6 +24,7 @@ Modul perla Crypt-SSLeay.
 
 %prep
 %setup -q -n Crypt-SSLeay-%{version}
+%patch -p1
 
 %build
 yes "" | perl Makefile.PL
