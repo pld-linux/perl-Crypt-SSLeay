@@ -7,8 +7,8 @@
 Summary:	Crypt::SSLeay - OpenSSL glue that provides LWP https support
 Summary(pl):	Crypt::SSLeay - obs³uga https dla LWP przez po³±czenie z OpenSSL
 Name:		perl-Crypt-SSLeay
-Version:	0.45
-Release:	3
+Version:	0.49
+Release:	1
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
