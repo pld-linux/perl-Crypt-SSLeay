@@ -60,8 +60,7 @@ Crypt::SSLeay ÆÞ ¸ðÁÙ.
 Perlmodul Crypt::SSLeay.
 
 %description -l pl
-Crypt::SSLeay zawiera modu³y: Date::Format, Date::Parse, Date::Language,
-Time::Zone.
+Modu³ Perla Crypt::SSLeay.
 
 %description -l pt
 Módulo de Perl Crypt::SSLeay.
