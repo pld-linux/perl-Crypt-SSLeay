@@ -1,11 +1,15 @@
+#
+# Conditional build:
+# _without_tests - do not perform "make test"
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Crypt
 %define		pnam	SSLeay
 Summary:	Crypt::SSLeay - OpenSSL glue that provides LWP https support
+Summary(pl):	Crypt::SSLeay - obs³uga https dla LWP przez po³±czenie z OpenSSL
 Name:		perl-Crypt-SSLeay
 Version:	0.45
-Release:	2
-License:	GPL
+Release:	3
+License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	openssl-devel >= 0.9.6a
@@ -14,19 +18,28 @@ BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-This perl module provides support for the https protocol under LWP, so
-that a LWP::UserAgent can make https GET & HEAD & POST requests. Please
-see perldoc LWP for more information on POST requests.
+This perl module provides support for the https protocol under LWP,
+so that a LWP::UserAgent can make https GET & HEAD & POST requests.
+
+The Crypt::SSLeay package contains Net::SSL, which is automatically
+loaded by LWP::Protocol::https on https requests, and provides the
+necessary SSL glue for that module to work.
+
+%description -l pl
+Ten modu³ Perla dostarcza obs³ugê protoko³u https dla LWP, dziêki
+czemu LWP::UserAgent mo¿e wykonywaæ zapytania GET i POST po https.
+
+Pakiet Crypt::SSLeay zawiera modu³ Net::SSL, automatycznie ³adowany
+przez LWP::Protocol::https w przypadku zapytañ https, oraz dostarcza
+niezbêdnych do jego dzia³ania sk³adników.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 yes "" | perl Makefile.PL
-
 %{__make} OPTIMIZE="%{rpmcflags}"
-
-%{!?_without_test:%{__make} test}
+%{!?_without_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
