@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	Crypt
 %define	pnam	SSLeay
-%include	/usr/lib/rpm/macros.perl
 Summary:	Crypt-SSLeay perl module
 Summary(pl):	Modu³ perla Crypt-SSLeay
 Name:		perl-Crypt-SSLeay
 Version:	0.35
-Release:	2
-
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -22,7 +21,7 @@ Crypt-SSLeay perl module.
 Modul perla Crypt-SSLeay.
 
 %prep
-%setup -q -n Crypt-SSLeay-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 yes "" | perl Makefile.PL
