@@ -22,12 +22,12 @@ Summary(tr):	Crypt::SSLeay - LWP https desteði saðlayan OpenSSL baðlantýsý
 Summary(zh_CN):	Crypt::SSLeay - Ìá¹© LWP https Ö§³ÖµÄ OpenSSL ½ºË®
 Summary(zh_TW):	Crypt::SSLeay - ´£¨Ñ LWP https ¤ä´©ªº OpenSSL glue¡C
 Name:		perl-Crypt-SSLeay
-Version:	0.49
-Release:	2
-License:	GPL/Artistic
+Version:	0.51
+Release:	1
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	8365c714d04735fd3a35703f6f45a421
+# Source0-md5:	e276fd3970d573139fe56695a7b747bd
 BuildRequires:	openssl-devel >= 0.9.7
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	rpm-perlprov >= 4.1-13
