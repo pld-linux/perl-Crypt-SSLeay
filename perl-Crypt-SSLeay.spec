@@ -3,8 +3,8 @@
 %bcond_without	tests	# Do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define		pdir	Crypt
-%define		pnam	SSLeay
+%define	pdir	Crypt
+%define	pnam	SSLeay
 Summary:	Crypt::SSLeay - OpenSSL glue that provides LWP https support
 Summary(cs):	Crypt::SSLeay - spojení OpenSSL, které poskytuje podporu https pro LWP
 Summary(da):	Crypt::SSLeay - OpenSSL-klister som giver understøttelse for LWP https
