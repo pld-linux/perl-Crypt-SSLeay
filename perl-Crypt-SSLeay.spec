@@ -7,11 +7,9 @@ Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
-Vendor: PLD
-Distribution: PLD
 Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Crypt/Crypt-SSLeay-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-16
-BuildRequires:	perl >= 5.005_03-14
+BuildRequires:	perl >= 5.6
 BuildRequires:	openssl-devel >= 0.9.4-2
 %requires_eq	perl
 Requires:	%{perl_sitearch}
@@ -29,36 +27,27 @@ Modul perla Crypt-SSLeay.
 %build
 yes "" | perl Makefile.PL
 
-make OPTIMIZE="$RPM_OPT_FLAGS"
+make OPTIMIZE="%{!?debug:$RPM_OPT_FLAGS}%{?debug:-O -g}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
+
 make install DESTDIR=$RPM_BUILD_ROOT
 
-strip --strip-unneeded $RPM_BUILD_ROOT/%{perl_sitearch}/auto/Crypt/SSLeay/*.so
-
-(
-  cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/Crypt/SSLeay
-  sed -e "s#$RPM_BUILD_ROOT##" .packlist | sort | uniq >.packlist.new
-  mv .packlist.new .packlist
-)
-
-gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man3/* \
-        CHANGES README
+gzip -9nf CHANGES README
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc {CHANGES,README}.gz
+%doc *.gz
 
 %{perl_sitearch}/Crypt/SSLeay.pm
 %{perl_sitearch}/Crypt/SSLeay
 %{perl_sitearch}/Net/SSL.pm
 
 %dir %{perl_sitearch}/auto/Crypt/SSLeay
-%{perl_sitearch}/auto/Crypt/SSLeay/.packlist
 %{perl_sitearch}/auto/Crypt/SSLeay/SSLeay.bs
 %attr(755,root,root) %{perl_sitearch}/auto/Crypt/SSLeay/SSLeay.so
 
