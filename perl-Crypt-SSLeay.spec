@@ -19,8 +19,8 @@ Summary(sv):	Crypt::SSLeay Perlmodul
 Summary(uk):	Модуль для Perl Crypt::SSLeay
 Summary(zh_CN):	Crypt::SSLeay Perl дё©И
 Name:		perl-Crypt-SSLeay
-Version:	0.37
-Release:	2
+Version:	0.41
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
