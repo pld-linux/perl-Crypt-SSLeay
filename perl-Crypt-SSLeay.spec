@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Crypt
 %define	pnam	SSLeay
-Summary:	Crypt-SSLeay perl module
-Summary(pl):	Modu³ perla Crypt-SSLeay
+Summary:	Crypt::SSLeay perl module
+Summary(pl):	Modu³ perla Crypt::SSLeay
 Name:		perl-Crypt-SSLeay
 Version:	0.35
 Release:	3
@@ -15,10 +15,10 @@ BuildRequires:	openssl-devel >= 0.9.6a
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Crypt-SSLeay perl module.
+Crypt::SSLeay perl module.
 
 %description -l pl
-Modul perla Crypt-SSLeay.
+Modul perla Crypt::SSLeay.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
