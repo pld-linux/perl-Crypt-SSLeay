@@ -1,0 +1,3 @@
+- removed Vendor, Distribution fields,
+- added using new rpm automation,
+- do not include .packlist file in %%files.
