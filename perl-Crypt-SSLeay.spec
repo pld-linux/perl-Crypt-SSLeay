@@ -6,21 +6,21 @@
 %define		pdir	Crypt
 %define		pnam	SSLeay
 Summary:	Crypt::SSLeay - OpenSSL glue that provides LWP HTTPS support
-Summary(cs):	Crypt::SSLeay - spojení OpenSSL, které poskytuje podporu HTTPS pro LWP
-Summary(da):	Crypt::SSLeay - OpenSSL-klister som giver understøttelse for LWP HTTPS
-Summary(de):	Crypt::SSLeay - OpenSSL Elemente für LWP HTTPS Support
-Summary(es):	Crypt::SSLeay - Enlace OpenSSL que proporciona soporte HTTPS LWP
-Summary(fr):	Crypt::SSLeay - colle OpenSSL fournissant une prise en charge LWP HTTPS
-Summary(it):	Crypt::SSLeay - OpenSSL glue che fornisce supporto per LWP HTTPS
-Summary(ja):	Crypt::SSLeay - LWP HTTPS¤Î¥µ¥İ¡¼¥È¤òÄó¶¡¤¹¤ëOpenSSL glue
-Summary(ko):	Crypt::SSLeay - LWP HTTPS Áö¿øÀ» Á¦°øÇÏ´Â OpenSSL Á¢Âø(glue) ÀÔ´Ï´Ù
-Summary(pl):	Crypt::SSLeay - obs³uga HTTPS dla LWP przez po³±czenie z OpenSSL
-Summary(pt):	Crypt::SSLeay - a interface de OpenSSL que oferece o suporte em LWP de HTTPS
-Summary(pt_BR):	Crypt::SSLeay - a interface de OpenSSL que oferece o suporte em LWP de HTTPS
-Summary(sv):	Crypt::SSLeay - OpenSSL-klister som gör stöd för LWP HTTPS
-Summary(tr):	Crypt::SSLeay - LWP HTTPS desteği sağlayan OpenSSL bağlantısı
-Summary(zh_CN):	Crypt::SSLeay - Ìá¹© LWP HTTPS Ö§³ÖµÄ OpenSSL ½ºË®
-Summary(zh_TW):	Crypt::SSLeay - ´£¨Ñ LWP HTTPS ¤ä´©ªº OpenSSL glue¡C
+Summary(cs.UTF-8):   Crypt::SSLeay - spojenÃ­ OpenSSL, kterÃ© poskytuje podporu HTTPS pro LWP
+Summary(da.UTF-8):   Crypt::SSLeay - OpenSSL-klister som giver understÃ¸ttelse for LWP HTTPS
+Summary(de.UTF-8):   Crypt::SSLeay - OpenSSL Elemente fÃ¼r LWP HTTPS Support
+Summary(es.UTF-8):   Crypt::SSLeay - Enlace OpenSSL que proporciona soporte HTTPS LWP
+Summary(fr.UTF-8):   Crypt::SSLeay - colle OpenSSL fournissant une prise en charge LWP HTTPS
+Summary(it.UTF-8):   Crypt::SSLeay - OpenSSL glue che fornisce supporto per LWP HTTPS
+Summary(ja.UTF-8):   Crypt::SSLeay - LWP HTTPSã®ã‚µãƒãƒ¼ãƒˆã‚’æä¾›ã™ã‚‹OpenSSL glue
+Summary(ko.UTF-8):   Crypt::SSLeay - LWP HTTPS ì§€ì›ì„ ì œê³µí•˜ëŠ” OpenSSL ì ‘ì°©(glue) ì…ë‹ˆë‹¤
+Summary(pl.UTF-8):   Crypt::SSLeay - obsÅ‚uga HTTPS dla LWP przez poÅ‚Ä…czenie z OpenSSL
+Summary(pt.UTF-8):   Crypt::SSLeay - a interface de OpenSSL que oferece o suporte em LWP de HTTPS
+Summary(pt_BR.UTF-8):   Crypt::SSLeay - a interface de OpenSSL que oferece o suporte em LWP de HTTPS
+Summary(sv.UTF-8):   Crypt::SSLeay - OpenSSL-klister som gÃ¶r stÃ¶d fÃ¶r LWP HTTPS
+Summary(tr.UTF-8):   Crypt::SSLeay - LWP HTTPS desteÄŸi saÄŸlayan OpenSSL baÄŸlantÄ±sÄ±
+Summary(zh_CN.UTF-8):   Crypt::SSLeay - æä¾› LWP HTTPS æ”¯æŒçš„ OpenSSL èƒ¶æ°´
+Summary(zh_TW.UTF-8):   Crypt::SSLeay - æä¾› LWP HTTPS æ”¯æ´çš„ OpenSSL glueã€‚
 Name:		perl-Crypt-SSLeay
 Version:	0.51
 Release:	2
@@ -43,54 +43,54 @@ The Crypt::SSLeay package contains Net::SSL, which is automatically
 loaded by LWP::Protocol::https on HTTPS requests, and provides the
 necessary SSL glue for that module to work.
 
-%description -l cs
-Tento modul Perlu nabízí podporu pro protokol HTTPS pod LWP, tak¾e
-LWP::UserAgent mù¾e provádìt HTTPS po¾adavky GET & HEAD & POST. Pro
-informace o po¾adavcích POST si prosím pøeètìte perldoc LWP.
+%description -l cs.UTF-8
+Tento modul Perlu nabÃ­zÃ­ podporu pro protokol HTTPS pod LWP, takÅ¾e
+LWP::UserAgent mÅ¯Å¾e provÃ¡dÄ›t HTTPS poÅ¾adavky GET & HEAD & POST. Pro
+informace o poÅ¾adavcÃ­ch POST si prosÃ­m pÅ™eÄtÄ›te perldoc LWP.
 
-Balíèek Crypt::SSLeay obsahuje Net::SSL, kterı je automaticky nahrán
-LWP::Protocol::https pøi po¾adavcích HTTPS, a nabízí potøebné spojení
+BalÃ­Äek Crypt::SSLeay obsahuje Net::SSL, kterÃ½ je automaticky nahrÃ¡n
+LWP::Protocol::https pÅ™i poÅ¾adavcÃ­ch HTTPS, a nabÃ­zÃ­ potÅ™ebnÃ© spojenÃ­
 SSL, aby tento modul fungoval.
 
-%description -l da
-Dette perlmodul giver understøttelse for protokollen HTTPS under LWP,
-så en LWP::UserAgent kan lave HTTPS-forespørgslerne GET & HEAD & POST.
-Se perldoc LWP for mere information om POST-forespørgsler.
+%description -l da.UTF-8
+Dette perlmodul giver understÃ¸ttelse for protokollen HTTPS under LWP,
+sÃ¥ en LWP::UserAgent kan lave HTTPS-forespÃ¸rgslerne GET & HEAD & POST.
+Se perldoc LWP for mere information om POST-forespÃ¸rgsler.
 
-Pakken Crypt::SSLeay indeholder Net::SSL som automatisk læses ind af
-LWP::Protocol::https ved HTTPS-forespørgsler, og giver det nødvendige
+Pakken Crypt::SSLeay indeholder Net::SSL som automatisk lÃ¦ses ind af
+LWP::Protocol::https ved HTTPS-forespÃ¸rgsler, og giver det nÃ¸dvendige
 SSL-klister til at det modul kan fungere.
 
-%description -l de
-Dieses Perl-Modul liefert Support für das HTTPS-Protokoll unter LWP,
-so dass ein LWP::UserAgent HTTPS GET & HEAD & POST Anfragen ausführen
-kann. Weitere Informationen über POST-Anfragen sindin perldoc LWP
+%description -l de.UTF-8
+Dieses Perl-Modul liefert Support fÃ¼r das HTTPS-Protokoll unter LWP,
+so dass ein LWP::UserAgent HTTPS GET & HEAD & POST Anfragen ausfÃ¼hren
+kann. Weitere Informationen Ã¼ber POST-Anfragen sindin perldoc LWP
 enthalten.
 
-Das Crypt::SSLeay Paket enthält Net::SSL, das bei HTTPS-Anfragen
+Das Crypt::SSLeay Paket enthÃ¤lt Net::SSL, das bei HTTPS-Anfragen
 automatisch von LWP::Protocol::https geladen wird, und bietet die
-erforderlichen SSL-Elemente für das Modul.
+erforderlichen SSL-Elemente fÃ¼r das Modul.
 
-%description -l es
-Este módulo perl proporciona soporte para el protocolo HTTPS bajo LWP,
+%description -l es.UTF-8
+Este mÃ³dulo perl proporciona soporte para el protocolo HTTPS bajo LWP,
 de manera que LWP::UserAgent pueda crear peticiones GET & HEAD & POST.
-Consulte perldoc LWP para más información sobre las peticiones POST.
+Consulte perldoc LWP para mÃ¡s informaciÃ³n sobre las peticiones POST.
 
 El paquete Crypt::SSLeay contiene Net::SSL, que se descarga
-automáticamente por LWP::Protocol::https en las peticiones HTTPS y
-proporciona los elementos necesarios SSL para que funcione el módulo.
+automÃ¡ticamente por LWP::Protocol::https en las peticiones HTTPS y
+proporciona los elementos necesarios SSL para que funcione el mÃ³dulo.
 
-%description -l fr
+%description -l fr.UTF-8
 Le module perl fournit un support pour le protocole HTTPS sous LWP, de
-manière à ce qu'un LWP::UserAgent puisse exécuter les requêtes GET &
+maniÃ¨re Ã  ce qu'un LWP::UserAgent puisse exÃ©cuter les requÃªtes GET &
 HEAD & POST. Veuillez consulter perldoc LWP pour obtenir de plus
-amples informations concernant les requêtes POST.
+amples informations concernant les requÃªtes POST.
 
-Le paquetage Crypt::SSLeay contient Net::SSL, qui est chargé
-automatiquement par LWP::Protocol::https sur les requêtes HTTPS, et
-fournit la colle SSL nécessaire pour faire fonctionner ce module.
+Le paquetage Crypt::SSLeay contient Net::SSL, qui est chargÃ©
+automatiquement par LWP::Protocol::https sur les requÃªtes HTTPS, et
+fournit la colle SSL nÃ©cessaire pour faire fonctionner ce module.
 
-%description -l it
+%description -l it.UTF-8
 Questo modulo di perl supporta il protocollo HTTPS in LWP, in modo che
 un LWP::UserAgent possa effettuare richieste GET & HEAD & POST HTTP.
 Consultare perldoc LWP per ulteriori informazioni sulle richieste
@@ -100,71 +100,71 @@ Il pacchetto Crypt::SSLeay contiene Net::SSL, che viene caricato
 automaticamente da LWP::Protocol::https sulle richieste HTTP e
 fornisce la colla SSL necessaria per far funzionare quel modulo.
 
-%description -l ja
-¤³¤Î perl¥â¥¸¥å¡¼¥ë¤Ï¡¢LWP¤Î¸µ¤ÇHTTPS¥×¥í¥È¥³¥ëÍÑ¤Î¥µ¥İ¡¼¥È¤òÄó¶¡¤·¤Ş
-¤¹¡£¤Ç¤¹¤«¤é¡¢LWP::UserAgent ¤Ï HTTPS GET & HEAD & POST¥ê¥¯¥¨¥¹¥È¤ò
-ºîÀ®¤Ç¤­¤Ş¤¹¡£ POST¥ê¥¯¥¨¥¹¥È¤Î¾ÜºÙ¤Ë¤Ä¤¤¤Æ¤Ï perldoc LWP¤ò
-¸æÍ÷²¼¤µ¤¤¡£ Íı Ëö¥¹¥È Crypt::SSLeay¥Ñ¥Ã¥±¡¼¥¸¤Ë¤Ï¡¢h¥ê¥¯¥¨¥¹¥È¤Ë¤è¤ê
-LWP::Protocol::https ¤Ç¼«Æ°Åª¤Ë¥í¡¼¥É¤µ¤ì¤ëNet::SSL¤ò´Ş¤ó¤Ç¤¤¤Ş¤¹¡£¤½
-¤·¤Æ¡¢¥â¥¸¥å¡¼¥ë¤¬Æ°ºî¤¹¤ë¤è¤¦ ¤Ë É¬Í×¤ÊSSL glue¤òÄó¶¡¤·¤Ş¤¹¡£
+%description -l ja.UTF-8
+ã“ã® perlãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ã¯ã€LWPã®å…ƒã§HTTPSãƒ—ãƒ­ãƒˆã‚³ãƒ«ç”¨ã®ã‚µãƒãƒ¼ãƒˆã‚’æä¾›ã—ã¾
+ã™ã€‚ã§ã™ã‹ã‚‰ã€LWP::UserAgent ã¯ HTTPS GET & HEAD & POSTãƒªã‚¯ã‚¨ã‚¹ãƒˆã‚’
+ä½œæˆã§ãã¾ã™ã€‚ POSTãƒªã‚¯ã‚¨ã‚¹ãƒˆã®è©³ç´°ã«ã¤ã„ã¦ã¯ perldoc LWPã‚’
+å¾¡è¦§ä¸‹ã•ã„ã€‚ ç† æœ«ã‚¹ãƒˆ Crypt::SSLeayãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã«ã¯ã€hãƒªã‚¯ã‚¨ã‚¹ãƒˆã«ã‚ˆã‚Š
+LWP::Protocol::https ã§è‡ªå‹•çš„ã«ãƒ­ãƒ¼ãƒ‰ã•ã‚Œã‚‹Net::SSLã‚’å«ã‚“ã§ã„ã¾ã™ã€‚ã
+ã—ã¦ã€ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ãŒå‹•ä½œã™ã‚‹ã‚ˆã† ã« å¿…è¦ãªSSL glueã‚’æä¾›ã—ã¾ã™ã€‚
 
-%description -l ko
-ÀÌ perl ¸ğµâÀº LWP::UserAgent°¡ HTTPS GET, HEAD, POST ¿äÃ»À» »ı¼ºÇÒ ¼ö
-ÀÖµµ·Ï LWP ÇÏ¿¡¼­ HTTPS ÇÁ·ÎÅäÄİ¿¡ ´ëÇÑ Áö¿øÀ» Á¦°øÇÕ´Ï´Ù. POST ¿äÃ»¿¡
-´ëÇÑ º¸´Ù ¸¹Àº Á¤º¸¸¦ ¿øÇÏ½Ã¸é, perldoc LWP¸¦ ÂüÁ¶ÇÏ½Ã±â ¹Ù¶ø´Ï´Ù.
+%description -l ko.UTF-8
+ì´ perl ëª¨ë“ˆì€ LWP::UserAgentê°€ HTTPS GET, HEAD, POST ìš”ì²­ì„ ìƒì„±í•  ìˆ˜
+ìˆë„ë¡ LWP í•˜ì—ì„œ HTTPS í”„ë¡œí† ì½œì— ëŒ€í•œ ì§€ì›ì„ ì œê³µí•©ë‹ˆë‹¤. POST ìš”ì²­ì—
+ëŒ€í•œ ë³´ë‹¤ ë§ì€ ì •ë³´ë¥¼ ì›í•˜ì‹œë©´, perldoc LWPë¥¼ ì°¸ì¡°í•˜ì‹œê¸° ë°”ëë‹ˆë‹¤.
 
-Crypt::SSLeay ÆĞÅ°Áö¿¡´Â HTTPS ¿äÃ»¿¡ µû¶ó LWP::Protocol::https¿¡ ÀÇÇØ
-ÀÚµ¿À¸·Î ·ÎµùµÇ´Â Net::SSL°¡ Æ÷ÇÔµÇ¾î ÀÖÀ¸¸ç, ÇØ´ç ¸ğµâÀÌ ÀÛµ¿ÇÏ´Âµ¥
-ÇÊ¿äÇÑ SSL Á¢Âø (glue)À» Á¦°øÇÕ´Ï´Ù.
+Crypt::SSLeay íŒ¨í‚¤ì§€ì—ëŠ” HTTPS ìš”ì²­ì— ë”°ë¼ LWP::Protocol::httpsì— ì˜í•´
+ìë™ìœ¼ë¡œ ë¡œë”©ë˜ëŠ” Net::SSLê°€ í¬í•¨ë˜ì–´ ìˆìœ¼ë©°, í•´ë‹¹ ëª¨ë“ˆì´ ì‘ë™í•˜ëŠ”ë°
+í•„ìš”í•œ SSL ì ‘ì°© (glue)ì„ ì œê³µí•©ë‹ˆë‹¤.
 
-%description -l pl
-Ten modu³ Perla dostarcza obs³ugê protoko³u HTTPS dla LWP, dziêki
-czemu LWP::UserAgent mo¿e wykonywaæ zapytania GET i POST po HTTPS.
+%description -l pl.UTF-8
+Ten moduÅ‚ Perla dostarcza obsÅ‚ugÄ™ protokoÅ‚u HTTPS dla LWP, dziÄ™ki
+czemu LWP::UserAgent moÅ¼e wykonywaÄ‡ zapytania GET i POST po HTTPS.
 
-Pakiet Crypt::SSLeay zawiera modu³ Net::SSL, automatycznie ³adowany
-przez LWP::Protocol::https w przypadku zapytañ HTTPS, oraz dostarcza
-niezbêdnych do jego dzia³ania sk³adników.
+Pakiet Crypt::SSLeay zawiera moduÅ‚ Net::SSL, automatycznie Å‚adowany
+przez LWP::Protocol::https w przypadku zapytaÅ„ HTTPS, oraz dostarcza
+niezbÄ™dnych do jego dziaÅ‚ania skÅ‚adnikÃ³w.
 
-%description -l pt
-Este módulo de Perl providencia o suporte para o protocolo HTTP em
+%description -l pt.UTF-8
+Este mÃ³dulo de Perl providencia o suporte para o protocolo HTTP em
 LWP, de modo a que um LWP::UserAgent possa fazer pedidos de HTTPS de
-GET & HEAD & POST. Veja o LWP do 'perldoc' para mais informações sobre
+GET & HEAD & POST. Veja o LWP do 'perldoc' para mais informaÃ§Ãµes sobre
 os pedidos de POST.
 
-O pacote Crypt::SSLeay contém o Net::SSL, que é carregado
+O pacote Crypt::SSLeay contÃ©m o Net::SSL, que Ã© carregado
 automaticamente pelo LWP::Protocol::https nos pedidos de HTTPS, e que
-fornece a lógica de interacção com o SSL necessária para o módulo
+fornece a lÃ³gica de interacÃ§Ã£o com o SSL necessÃ¡ria para o mÃ³dulo
 funcionar.
 
-%description -l pt_BR
-Este módulo de Perl providencia o suporte para o protocolo HTTP em
+%description -l pt_BR.UTF-8
+Este mÃ³dulo de Perl providencia o suporte para o protocolo HTTP em
 LWP, de modo a que um LWP::UserAgent possa fazer pedidos de HTTPS de
-GET & HEAD & POST. Veja o LWP do 'perldoc' para mais informações sobre
+GET & HEAD & POST. Veja o LWP do 'perldoc' para mais informaÃ§Ãµes sobre
 os pedidos de POST.
 
-O pacote Crypt::SSLeay contém o Net::SSL, que é carregado
+O pacote Crypt::SSLeay contÃ©m o Net::SSL, que Ã© carregado
 automaticamente pelo LWP::Protocol::https nos pedidos de HTTPS, e que
-fornece a lógica de interacção com o SSL necessária para o módulo
+fornece a lÃ³gica de interacÃ§Ã£o com o SSL necessÃ¡ria para o mÃ³dulo
 funcionar.
 
-%description -l sv
-Denna perlmodul ger stöd för protokollet HTTPS under LWP, så att en
-LWP::UserAgent kan göra HTTPS-begäran GET & HEAD & POST.  Se perldoc
-LWP för mer information om POST-begäran.
+%description -l sv.UTF-8
+Denna perlmodul ger stÃ¶d fÃ¶r protokollet HTTPS under LWP, sÃ¥ att en
+LWP::UserAgent kan gÃ¶ra HTTPS-begÃ¤ran GET & HEAD & POST.  Se perldoc
+LWP fÃ¶r mer information om POST-begÃ¤ran.
 
-Paketet Crypt::SSLeay innehåller Net::SSL som automatiskt läses in av
-LWP::Protocol::https vid HTTPS-begäran, och ger det nödvändiga
-SSL-klistret för att den mudulen skall fungera.
+Paketet Crypt::SSLeay innehÃ¥ller Net::SSL som automatiskt lÃ¤ses in av
+LWP::Protocol::https vid HTTPS-begÃ¤ran, och ger det nÃ¶dvÃ¤ndiga
+SSL-klistret fÃ¶r att den mudulen skall fungera.
 
-%description -l zh_CN
-¸Ã Perl Ä£¿éÌá¹©¶Ô LWP ÏÂµÄ HTTPS Ğ­ÒéµÄÖ§³Ö£¬Òò´Ë
- LWP::UserAgent ÄÜ¹»½øĞĞHTTPS GET & HEAD & POST
-ÇëÇó¡£Çë²ÎÔÄ perldoc LWP À´»ñÈ¡¹ØÓÚ POST ÇëÇóµÄÏê
-Ï¸ĞÅÏ¢¡£
+%description -l zh_CN.UTF-8
+è¯¥ Perl æ¨¡å—æä¾›å¯¹ LWP ä¸‹çš„ HTTPS åè®®çš„æ”¯æŒï¼Œå› æ­¤
+ LWP::UserAgent èƒ½å¤Ÿè¿›è¡ŒHTTPS GET & HEAD & POST
+è¯·æ±‚ã€‚è¯·å‚é˜… perldoc LWP æ¥è·å–å…³äº POST è¯·æ±‚çš„è¯¦
+ç»†ä¿¡æ¯ã€‚
 
-Crypt::SSLeay Èí¼ş°ü°üº¬ Net::SSL(ËüÔÚ HTTPS ÇëÇóÊ±
-±» LWP::Protocol::https ×Ô¶¯ÔØÈë)£¬²¢ÇÒÎª¸ÃÄ£¿éµÄÔËĞĞ
-Ìá¹©ÁË±ØÒªµÄ SSL ½ºË®¡£
+Crypt::SSLeay è½¯ä»¶åŒ…åŒ…å« Net::SSL(å®ƒåœ¨ HTTPS è¯·æ±‚æ—¶
+è¢« LWP::Protocol::https è‡ªåŠ¨è½½å…¥)ï¼Œå¹¶ä¸”ä¸ºè¯¥æ¨¡å—çš„è¿è¡Œ
+æä¾›äº†å¿…è¦çš„ SSL èƒ¶æ°´ã€‚
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
