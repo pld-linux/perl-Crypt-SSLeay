@@ -6,21 +6,21 @@
 %define		pdir	Crypt
 %define		pnam	SSLeay
 Summary:	Crypt::SSLeay - OpenSSL glue that provides LWP HTTPS support
-Summary(cs.UTF-8):   Crypt::SSLeay - spojení OpenSSL, které poskytuje podporu HTTPS pro LWP
-Summary(da.UTF-8):   Crypt::SSLeay - OpenSSL-klister som giver understøttelse for LWP HTTPS
-Summary(de.UTF-8):   Crypt::SSLeay - OpenSSL Elemente für LWP HTTPS Support
-Summary(es.UTF-8):   Crypt::SSLeay - Enlace OpenSSL que proporciona soporte HTTPS LWP
-Summary(fr.UTF-8):   Crypt::SSLeay - colle OpenSSL fournissant une prise en charge LWP HTTPS
-Summary(it.UTF-8):   Crypt::SSLeay - OpenSSL glue che fornisce supporto per LWP HTTPS
-Summary(ja.UTF-8):   Crypt::SSLeay - LWP HTTPSのサポートを提供するOpenSSL glue
-Summary(ko.UTF-8):   Crypt::SSLeay - LWP HTTPS 지원을 제공하는 OpenSSL 접착(glue) 입니다
-Summary(pl.UTF-8):   Crypt::SSLeay - obsługa HTTPS dla LWP przez połączenie z OpenSSL
-Summary(pt.UTF-8):   Crypt::SSLeay - a interface de OpenSSL que oferece o suporte em LWP de HTTPS
-Summary(pt_BR.UTF-8):   Crypt::SSLeay - a interface de OpenSSL que oferece o suporte em LWP de HTTPS
-Summary(sv.UTF-8):   Crypt::SSLeay - OpenSSL-klister som gör stöd för LWP HTTPS
-Summary(tr.UTF-8):   Crypt::SSLeay - LWP HTTPS desteği sağlayan OpenSSL bağlantısı
-Summary(zh_CN.UTF-8):   Crypt::SSLeay - 提供 LWP HTTPS 支持的 OpenSSL 胶水
-Summary(zh_TW.UTF-8):   Crypt::SSLeay - 提供 LWP HTTPS 支援的 OpenSSL glue。
+Summary(cs.UTF-8):	Crypt::SSLeay - spojení OpenSSL, které poskytuje podporu HTTPS pro LWP
+Summary(da.UTF-8):	Crypt::SSLeay - OpenSSL-klister som giver understøttelse for LWP HTTPS
+Summary(de.UTF-8):	Crypt::SSLeay - OpenSSL Elemente für LWP HTTPS Support
+Summary(es.UTF-8):	Crypt::SSLeay - Enlace OpenSSL que proporciona soporte HTTPS LWP
+Summary(fr.UTF-8):	Crypt::SSLeay - colle OpenSSL fournissant une prise en charge LWP HTTPS
+Summary(it.UTF-8):	Crypt::SSLeay - OpenSSL glue che fornisce supporto per LWP HTTPS
+Summary(ja.UTF-8):	Crypt::SSLeay - LWP HTTPSのサポートを提供するOpenSSL glue
+Summary(ko.UTF-8):	Crypt::SSLeay - LWP HTTPS 지원을 제공하는 OpenSSL 접착(glue) 입니다
+Summary(pl.UTF-8):	Crypt::SSLeay - obsługa HTTPS dla LWP przez połączenie z OpenSSL
+Summary(pt.UTF-8):	Crypt::SSLeay - a interface de OpenSSL que oferece o suporte em LWP de HTTPS
+Summary(pt_BR.UTF-8):	Crypt::SSLeay - a interface de OpenSSL que oferece o suporte em LWP de HTTPS
+Summary(sv.UTF-8):	Crypt::SSLeay - OpenSSL-klister som gör stöd för LWP HTTPS
+Summary(tr.UTF-8):	Crypt::SSLeay - LWP HTTPS desteği sağlayan OpenSSL bağlantısı
+Summary(zh_CN.UTF-8):	Crypt::SSLeay - 提供 LWP HTTPS 支持的 OpenSSL 胶水
+Summary(zh_TW.UTF-8):	Crypt::SSLeay - 提供 LWP HTTPS 支援的 OpenSSL glue。
 Name:		perl-Crypt-SSLeay
 Version:	0.51
 Release:	2
