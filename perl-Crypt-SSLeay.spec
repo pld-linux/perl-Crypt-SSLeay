@@ -173,6 +173,7 @@ Crypt::SSLeay 软件包包含 Net::SSL(它在 HTTPS 请求时
 yes "" | %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make} \
+	CC="%{__cc}" \
 	OPTIMIZE="%{rpmcflags}"
 
 %{?with_tests:%{__make} test}
