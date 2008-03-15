@@ -29,7 +29,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Crypt/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	82264180f5911dce33dbd85e24b1f36b
-URL:		http://search.cpan.org/~dland/Crypt-SSLeay/
+URL:		http://search.cpan.org/dist/Crypt-SSLeay/
 BuildRequires:	openssl-devel >= 0.9.7d
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
