@@ -31,6 +31,10 @@ Source0:	http://www.cpan.org/modules/by-module/Crypt/%{pdir}-%{pnam}-%{version}.
 # Source0-md5:	4812f14d6e8c71714a26c0ad733666dc
 URL:		http://search.cpan.org/dist/Crypt-SSLeay/
 BuildRequires:	openssl-devel >= 0.9.7d
+%if %{with tests}
+BuildRequires:	perl-Test-Simple >= 0.88
+BuildRequires:	perl-Try-Tiny >= 0.09
+%endif
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -196,4 +200,5 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{perl_vendorarch}/auto/Crypt/SSLeay
 %{perl_vendorarch}/auto/Crypt/SSLeay/SSLeay.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Crypt/SSLeay/SSLeay.so
-%{_mandir}/man3/*
+%{_mandir}/man3/Crypt::SSLeay.3pm*
+%{_mandir}/man3/Net::SSL.3pm*
