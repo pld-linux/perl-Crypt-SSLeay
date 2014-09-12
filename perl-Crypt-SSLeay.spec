@@ -198,7 +198,6 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorarch}/Crypt/SSLeay
 %{perl_vendorarch}/Net/SSL.pm
 %dir %{perl_vendorarch}/auto/Crypt/SSLeay
-%{perl_vendorarch}/auto/Crypt/SSLeay/SSLeay.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Crypt/SSLeay/SSLeay.so
 %{_mandir}/man3/Crypt::SSLeay.3pm*
 %{_mandir}/man3/Net::SSL.3pm*
