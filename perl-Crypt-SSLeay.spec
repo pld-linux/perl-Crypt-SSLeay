@@ -22,19 +22,20 @@ Summary(tr.UTF-8):	Crypt::SSLeay - LWP HTTPS desteği sağlayan OpenSSL bağlant
 Summary(zh_CN.UTF-8):	Crypt::SSLeay - 提供 LWP HTTPS 支持的 OpenSSL 胶水
 Summary(zh_TW.UTF-8):	Crypt::SSLeay - 提供 LWP HTTPS 支援的 OpenSSL glue。
 Name:		perl-Crypt-SSLeay
-Version:	0.64
-Release:	4
+Version:	0.72
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Crypt/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	4812f14d6e8c71714a26c0ad733666dc
+# Source0-md5:	77d955c9056dbb12413d95d8852a9cdf
 URL:		http://search.cpan.org/dist/Crypt-SSLeay/
 BuildRequires:	openssl-devel >= 0.9.7d
 %if %{with tests}
 BuildRequires:	perl-Test-Simple >= 0.88
 BuildRequires:	perl-Try-Tiny >= 0.09
 %endif
+BuildRequires:	perl-Path-Class >= 0.35
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -199,5 +200,5 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorarch}/Net/SSL.pm
 %dir %{perl_vendorarch}/auto/Crypt/SSLeay
 %attr(755,root,root) %{perl_vendorarch}/auto/Crypt/SSLeay/SSLeay.so
-%{_mandir}/man3/Crypt::SSLeay.3pm*
+%{_mandir}/man3/Crypt::SSLeay*.3pm*
 %{_mandir}/man3/Net::SSL.3pm*
