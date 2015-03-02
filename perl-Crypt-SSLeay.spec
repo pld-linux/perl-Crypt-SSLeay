@@ -31,13 +31,15 @@ Source0:	http://www.cpan.org/modules/by-module/Crypt/%{pdir}-%{pnam}-%{version}.
 # Source0-md5:	77d955c9056dbb12413d95d8852a9cdf
 URL:		http://search.cpan.org/dist/Crypt-SSLeay/
 BuildRequires:	openssl-devel >= 0.9.7d
+BuildRequires:	perl-ExtUtils-CBuilder >= 0.280205
+BuildRequires:	perl-Path-Class >= 0.35
 %if %{with tests}
 BuildRequires:	perl-Test-Simple >= 0.88
-BuildRequires:	perl-Try-Tiny >= 0.09
+BuildRequires:	perl-Try-Tiny >= 0.19
 %endif
-BuildRequires:	perl-Path-Class >= 0.35
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+Conflicts:	perl-LWP-Protocol-https < 6.02
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
