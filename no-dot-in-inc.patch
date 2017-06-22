@@ -1,0 +1,11 @@
+--- Crypt-SSLeay-0.72/Makefile.PL~	2014-04-24 16:50:29.000000000 +0200
++++ Crypt-SSLeay-0.72/Makefile.PL	2017-06-22 22:48:18.962010843 +0200
+@@ -8,6 +8,8 @@
+ use Path::Class;
+ use Try::Tiny;
+ 
++use lib '.';
++
+ use inc::IO::Interactive::Tiny;
+ 
+ caller
