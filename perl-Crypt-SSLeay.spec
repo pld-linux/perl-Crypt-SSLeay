@@ -40,6 +40,7 @@ BuildRequires:	perl-Try-Tiny >= 0.19
 %endif
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	rpmbuild(macros) >= 1.745
 Conflicts:	perl-LWP-Protocol-https < 6.02
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
