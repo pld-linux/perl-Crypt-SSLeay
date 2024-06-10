@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_without	tests	# Do not perform "make test"
+%bcond_without	tests	# unit tests
 #
 %define		pdir	Crypt
 %define		pnam	SSLeay
@@ -26,11 +26,11 @@ Release:	16
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/Crypt/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	https://www.cpan.org/modules/by-module/Crypt/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	77d955c9056dbb12413d95d8852a9cdf
 Patch0:		no-dot-in-inc.patch
 Patch1:		openssl.patch
-URL:		http://search.cpan.org/dist/Crypt-SSLeay/
+URL:		https://metacpan.org/dist/Crypt-SSLeay/
 BuildRequires:	openssl-devel >= 0.9.7d
 BuildRequires:	perl-ExtUtils-CBuilder >= 0.280205
 BuildRequires:	perl-Path-Class >= 0.35
