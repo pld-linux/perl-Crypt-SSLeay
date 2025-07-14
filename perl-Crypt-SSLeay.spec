@@ -177,8 +177,8 @@ Crypt::SSLeay 软件包包含 Net::SSL(它在 HTTPS 请求时
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
-%patch0 -p1
-%patch1 -p1
+%patch -P0 -p1
+%patch -P1 -p1
 
 %build
 yes "" | %{__perl} Makefile.PL \
